@@ -9,6 +9,7 @@ public class Student {
 	private int id;
 	private String username;
 	private DateTime dob;
+	private CourseProgramme course;
 	
 	public Student(String name,int age,int id,DateTime dob){
 		this.name = name;
@@ -16,7 +17,6 @@ public class Student {
 		this.id = id;
 		this.dob = dob;
 	}
-
 	public String getName() {
 		return name;
 	}
@@ -48,11 +48,16 @@ public class Student {
 	public void setDob(DateTime dob) {
 		this.dob = dob;
 	}
-	
+	public CourseProgramme getCourse(){
+		return this.course;
+	}
     public String getUsername() {
         String username = this.name + this.age;
         return username.toLowerCase();
     }
+	public void addStutoCourse(CourseProgramme course){
+		this.course = course;
+	}
 
     public void setUsername(String username) {
         this.username = username;
