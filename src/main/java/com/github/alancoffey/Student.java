@@ -16,6 +16,7 @@ public class Student {
 		this.age = age;
 		this.id = id;
 		this.dob = dob;
+	
 	}
 	public String getName() {
 		return name;
@@ -61,13 +62,6 @@ public class Student {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-	@Override
-	public String toString() {
-		return "Student [course=" + course + ", getCourse()=" + getCourse()
-				+ "]";
-	}
-    
-		
+    }	
 }
 
