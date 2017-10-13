@@ -48,8 +48,8 @@ public class Student {
 	public void setDob(DateTime dob) {
 		this.dob = dob;
 	}
-	public CourseProgramme getCourse(){
-		return this.course;
+	public String getCourse(){
+		return this.course.toString();
 	}
     public String getUsername() {
         String username = this.name + this.age;
